@@ -148,7 +148,7 @@ export default function Header() {
                           aria-hidden="true"
                           className="size-5 flex-none text-gray-400"
                         />
-                        {item.name}
+                        <a>{item.name}</a>
                       </Link>
                     ))}
                   </div>
@@ -158,18 +158,20 @@ export default function Header() {
           </Popover>
 
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Features
+            <a>Features</a>
           </Link>
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Marketplace
+            <a>Marketplace</a>
           </Link>
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Company
+            <a>Company</a>
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            <a>
+              Log in <span aria-hidden="true">&rarr;</span>
+            </a>
           </Link>
         </div>
       </nav>
@@ -182,12 +184,14 @@ export default function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <a>
+                <span className="sr-only">Your Company</span>
+                <Image
+                  alt=""
+                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                  className="h-8 w-auto"
+                />
+              </a>
             </Link>
             <button
               type="button"
@@ -226,19 +230,19 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  <a>Features</a>
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  <a>Marketplace</a>
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  <a>Company</a>
                 </Link>
               </div>
               <div className="py-6">
@@ -246,7 +250,7 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  <a>Log in</a>
                 </Link>
               </div>
             </div>

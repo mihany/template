@@ -7,7 +7,7 @@ export default function CyberSecurityCareerTrack() {
       <p>Welcome to Cyber Security Track</p>
       <Image
         className="dark:invert"
-        src="../next.svg"
+        src="../imageplaceholder.svg"
         alt="Next.js logo"
         width={180}
         height={38}

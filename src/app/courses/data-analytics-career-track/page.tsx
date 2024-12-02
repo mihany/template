@@ -5,6 +5,14 @@ export default function DataAnalyticsCareerTrack() {
     <div>
       <h1>Data Analytics Track Course Page</h1>
       <p>Welcome to Data Analytics Track</p>
+      <Image
+        className="dark:invert"
+        src="../imageplaceholder.svg"
+        alt="Next.js logo"
+        width={180}
+        height={38}
+        priority
+      />
     </div>
   );
 }

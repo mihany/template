@@ -7,6 +7,25 @@ export default function Home() {
       <section>
         <ul className="flex space-x-4">
           <li>
+            <Link href="./about">About US</Link>
+          </li>
+          <li>
+            <Link href="./apply">Apply</Link>
+          </li>
+          <li>
+            <Link href="./contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link href="./eventsathoetzin">Events</Link>
+          </li>
+          <li>
+            <Link href="./faq">FAQ</Link>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul className="flex space-x-4">
+          <li>
             <Link href="./courses/cyber-security-career-track">
               Cyber Security Track Course
             </Link>
@@ -74,6 +93,31 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+        <section>
+          <ul className="flex space-x-4">
+            <li>
+              <Link href="./courses/cyber-security-career-track">
+                Cyber Security Track Course
+              </Link>
+            </li>
+            <li>
+              <Link href="./courses/data-analytics-career-track">
+                Data Analytics Track Course
+              </Link>
+            </li>
+            <li>
+              <Link href="./courses/data-science-career-track">
+                Data Science Track Course
+              </Link>
+            </li>
+            <li>
+              <Link href="./courses/software-engineering-career-track">
+                Software Engineering Track Course
+              </Link>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a

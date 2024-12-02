@@ -27,7 +27,6 @@ import {
   PlayCircleIcon,
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
-import Link from "next/link";
 
 const products = [
   {
@@ -71,7 +70,7 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <a href="./" className="-m-1.5 p-1.5">
             <span className="sr-only">Hoetzin</span>
             <Image
               className="dark:invert"
@@ -86,7 +85,7 @@ export default function Header() {
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
               className="h-8 w-auto"
             /> */}
-          </Link>
+          </a>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -124,13 +123,13 @@ export default function Header() {
                         className="size-6 text-gray-600 group-hover:text-indigo-600"
                       />
                     </div>
-                    <Link
+                    <a
                       href={item.href}
                       className="mt-6 block font-semibold text-gray-900"
                     >
                       {item.name}
                       <span className="absolute inset-0" />
-                    </Link>
+                    </a>
                     <p className="mt-1 text-gray-600">{item.description}</p>
                   </div>
                 ))}
@@ -139,7 +138,7 @@ export default function Header() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
                     {callsToAction.map((item) => (
-                      <Link
+                      <a
                         key={item.name}
                         href={item.href}
                         className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
@@ -148,8 +147,8 @@ export default function Header() {
                           aria-hidden="true"
                           className="size-5 flex-none text-gray-400"
                         />
-                        <a>{item.name}</a>
-                      </Link>
+                        {item.name}
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -157,22 +156,20 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            <a>Features</a>
-          </Link>
-          <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            <a>Marketplace</a>
-          </Link>
-          <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            <a>Company</a>
-          </Link>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            Features
+          </a>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            Marketplace
+          </a>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            Company
+          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            <a>
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </Link>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            Log in <span aria-hidden="true">&rarr;</span>
+          </a>
         </div>
       </nav>
       <Dialog
@@ -183,16 +180,14 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
-              <a>
-                <span className="sr-only">Your Company</span>
-                <Image
-                  alt=""
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
-                />
-              </a>
-            </Link>
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <Image
+                alt=""
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-auto"
+              />
+            </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -226,32 +221,32 @@ export default function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <Link
+                <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  <a>Features</a>
-                </Link>
-                <Link
+                  Features
+                </a>
+                <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  <a>Marketplace</a>
-                </Link>
-                <Link
+                  Marketplace
+                </a>
+                <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  <a>Company</a>
-                </Link>
+                  Company
+                </a>
               </div>
               <div className="py-6">
-                <Link
+                <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  <a>Log in</a>
-                </Link>
+                  Log in
+                </a>
               </div>
             </div>
           </div>

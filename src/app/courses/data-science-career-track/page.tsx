@@ -7,7 +7,7 @@ export default function DataScienceCareerTrack() {
       <p>Welcome to Data Science Track</p>
       <Image
         className="dark:invert"
-        src="../imageplaceholder.svg"
+        src="images/imageplaceholder.svg"
         alt="Next.js logo"
         width={180}
         height={38}

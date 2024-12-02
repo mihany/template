@@ -34,25 +34,25 @@ const products = [
   {
     name: "Data Analytics Bootcamp",
     description: "Get a better understanding where your traffic is coming from",
-    href: "/courses/data-analytics-career-track",
+    href: "./courses/data-analytics-career-track",
     icon: ChartPieIcon,
   },
   {
     name: "Software Engineering Bootcamp",
     description: "Speak directly to your customers with our engagement tool",
-    href: "/courses/software-engineering-career-track",
+    href: "./courses/software-engineering-career-track",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Cyber Security Bootcamp",
     description: "Your customers’ data will be safe and secure",
-    href: "/courses/cyber-security-career-track",
+    href: "./courses/cyber-security-career-track",
     icon: FingerPrintIcon,
   },
   {
     name: "Data Science Bootcamp",
     description: "Your customers’ data will be safe and secure",
-    href: "/courses/data-science-career-track",
+    href: "./courses/data-science-career-track",
     icon: SquaresPlusIcon,
   },
 ];

@@ -77,7 +77,7 @@ export default function Header() {
             <Image
               // className="dark:invert"
               src="../logo.svg"
-              alt="Next.js logo"
+              alt="Hoetzin Logo"
               width={100}
               height={20}
               priority

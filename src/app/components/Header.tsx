@@ -140,7 +140,7 @@ export default function Header() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
                     {callsToAction.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
@@ -150,7 +150,7 @@ export default function Header() {
                           className="size-5 flex-none text-gray-400"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

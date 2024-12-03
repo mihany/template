@@ -76,7 +76,7 @@ export default function Header() {
             <span className="sr-only">Hoetzin</span>
             <Image
               // className="dark:invert"
-              src="images/logo.svg"
+              src="./images/logo.svg"
               alt="Hoetzin Logo"
               width={100}
               height={20}

@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Contact - Hoetzin",
+  title: "Contact Us - Hoetzin",
   description:
     "Learn more about Hoetzin and our mission to provide quality education for everyone.",
   openGraph: {
-    title: "Contact - Hoetzin",
+    title: "Contact Hoetzin",
     description:
       "Learn more about Hoetzin and our mission to provide quality education for everyone.",
     url: "https://www.hoetzin.com/about",
@@ -12,7 +12,7 @@ export const metadata = {
         url: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         width: 800,
         height: 600,
-        alt: "Contact - Hoetzin",
+        alt: "Contact Hoetzin",
       },
     ],
   },
